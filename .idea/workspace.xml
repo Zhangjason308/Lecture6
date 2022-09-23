@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69dab2da-a0d1-483c-b5db-28f6476b6165" name="Changes" comment="">
+    <list default="true" id="69dab2da-a0d1-483c-b5db-28f6476b6165" name="Changes" comment="Lecture 6 - Sept 23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CourseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CourseListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Prof.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prof.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TeachingAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeachingAssistant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +57,14 @@
       <option name="presentableId" value="Default" />
       <updated>1663787376588</updated>
     </task>
+    <task id="LOCAL-00001" summary="Lecture 6 - Sept 23">
+      <created>1663959890856</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663959890856</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,5 +80,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Lecture 6 - Sept 23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lecture 6 - Sept 23" />
   </component>
 </project>

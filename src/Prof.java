@@ -6,6 +6,7 @@
 import java.util.ArrayList;
 import java.util.Date;
 
+
 public class Prof {
 	private String name;
 	private Date midtermDate;
@@ -38,17 +39,11 @@ public class Prof {
 		for(CourseListener s: this.courseListeners){
 			s.handleMidtermPostponementDate(date);
 		}
-		ta.postpone(date);
-	}
-	
-	public void setTA(TeachingAssistant theTA){
-		this.courseListeners.add(theTA);
-	}
-	
-	public void addStudent(Student s){
-		this.students.add(s);
 	}
 
+	public void addCourseListener(CourseListener cl) {
+		this.courseListeners.add(cl);
+	}
 
 	public static void main(String[] args) {
 
@@ -58,9 +53,9 @@ public class Prof {
 		TeachingAssistant ta = new TeachingAssistant("Michael");
 	
 	
-		p.addStudent(s);
-		p.addStudent(s2);
-		p.setTA(ta);
+		p.addCourseListener(s);
+		p.addCourseListener(s2);
+		p.addCourseListener(ta);
 	
 		Date midterm = new Date();
 		p.setMidterm(midterm);

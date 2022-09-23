@@ -5,7 +5,7 @@
 
 import java.util.Date;
 
-public class Student{
+public class Student implements CourseListener {
 	private String name;
 	private Date midterm;
 
@@ -29,5 +29,15 @@ public class Student{
 
 	public void handleMidtermDate(Date date) {
 		this.study(date);
+	}
+
+	@Override
+	public void handleMidtermPostponementDate(Date date) {
+
+	}
+
+	@Override
+	public void handleMidtermPostponeDate(Date date) {
+
 	}
 }
