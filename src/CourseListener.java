@@ -1,7 +1,7 @@
 import java.util.Date;
 
 public interface CourseListener {
-    void handleMidtermDate(Date date);
+    void handleMidtermDate(MidtermEvent m);
 
     void handleMidtermPostponementDate(Date date);
 

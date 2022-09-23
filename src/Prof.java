@@ -29,7 +29,7 @@ public class Prof {
 	public void setMidterm(Date date) {
 		this.midtermDate = date; //when this date is set, tell the students
 		for(CourseListener s: this.courseListeners){ //tell each student in students to choose study date
-			s.handleMidtermDate(date);
+			s.handleMidtermDate(new MidtermEvent(date, this));
 		}
 
 	}

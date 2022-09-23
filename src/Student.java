@@ -27,7 +27,7 @@ public class Student implements CourseListener {
 		System.out.println(name + " : Alright! I get to party since my midterm isn't until " + this.midterm);
 	}
 
-	public void handleMidtermDate(Date date) {
+	public void handleMidtermDate(Date date, Prof prof) {
 		this.study(date);
 	}
 
