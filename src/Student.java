@@ -26,4 +26,8 @@ public class Student{
 		this.midterm = date;
 		System.out.println(name + " : Alright! I get to party since my midterm isn't until " + this.midterm);
 	}
+
+	public void handleMidtermDate(Date date) {
+		this.study(date);
+	}
 }

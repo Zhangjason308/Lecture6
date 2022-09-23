@@ -9,12 +9,12 @@ import java.util.Date;
 public class Prof {
 	private String name;
 	private Date midtermDate;
-	private ArrayList<Student> students;
-	private TeachingAssistant ta;
+	private ArrayList<CourseListener> courseListeners;//Changed Student to Course Listener in which we created an interface for Course Listener
+	//private TeachingAssistant ta;
 
 	public Prof(String aName) {
 		this.name = aName;
-		this.students = new ArrayList<Student>();
+		this.courseListeners = new ArrayList<>();
 	}
 
 	public Date getMidterm() {
@@ -26,23 +26,23 @@ public class Prof {
 	}
 
 	public void setMidterm(Date date) {
-		this.midtermDate = date;
-		for(Student s: this.students){
-			s.study(date);
+		this.midtermDate = date; //when this date is set, tell the students
+		for(CourseListener s: this.courseListeners){ //tell each student in students to choose study date
+			s.handleMidtermDate(date);
 		}
-		ta.proctor(date);
+
 	}
 	
 	public void postponeMidterm(Date date){
 		this.midtermDate = date;
-		for(Student s: this.students){
-			s.party(date);
+		for(CourseListener s: this.courseListeners){
+			s.handleMidtermPostponementDate(date);
 		}
 		ta.postpone(date);
 	}
 	
 	public void setTA(TeachingAssistant theTA){
-		this.ta = theTA;
+		this.courseListeners.add(theTA);
 	}
 	
 	public void addStudent(Student s){

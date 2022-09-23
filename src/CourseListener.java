@@ -1,2 +1,9 @@
-package PACKAGE_NAME;public interface CourseListener {
+import java.util.Date;
+
+public interface CourseListener {
+    void handleMidtermDate(Date date);
+
+    void handleMidtermPostponementDate(Date date);
+
+    void handleMidtermPostponeDate(Date date);
 }
