@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class Prof {
 	private String name;
-	private Date midtermDate;
+	//private Date midtermDate; decoupled Prof on the midterm date
 	private ArrayList<CourseListener> courseListeners;//Changed Student to Course Listener in which we created an interface for Course Listener
 	//private TeachingAssistant ta;
 
@@ -27,17 +27,17 @@ public class Prof {
 	}
 
 	public void setMidterm(Date date) {
-		this.midtermDate = date; //when this date is set, tell the students
+		MidtermEvent event = new MidtermEvent(date, this); // this event is immutable. Prof creates a new event a.k.a source
 		for(CourseListener s: this.courseListeners){ //tell each student in students to choose study date
-			s.handleMidtermDate(new MidtermEvent(date, this));
+			s.handleMidtermDate(event);
 		}
 
 	}
 	
 	public void postponeMidterm(Date date){
-		this.midtermDate = date;
+		MidtermEvent event = new MidtermEvent(date, this); // this event is immutable
 		for(CourseListener s: this.courseListeners){
-			s.handleMidtermPostponementDate(date);
+			s.handleMidtermPostponement(event);
 		}
 	}
 

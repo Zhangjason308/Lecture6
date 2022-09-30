@@ -3,6 +3,18 @@
  *
  */
 
+/*
+***********Lecture 7 *******************
+- Once we deleted attribute p in MidtermEvent. This class is affected.
+  if we change handleMidterm to event.getSource... instead of event.prof... then we can't call .getName() following it
+- So in the handleMidterm method, initialize prof P and cast the event.getSource() to Prof
+	ex: Prof p = (Prof) event.getSource();
+- Now we change it so that we create Object o and
+ Object o = event.getSource(); // create object o
+		if (o instanceof Prof p) {
+			System.out.println(p.getName());
+		}
+ */
 import java.util.Date;
 
 public class Student implements CourseListener {
@@ -27,17 +39,15 @@ public class Student implements CourseListener {
 		System.out.println(name + " : Alright! I get to party since my midterm isn't until " + this.midterm);
 	}
 
-	public void handleMidtermDate(Date date, Prof prof) {
-		this.study(date);
+	@Override
+	public void handleMidtermDate(MidtermEvent event) {
+			System.out.println(event.getProf().getName());
+			study(event.getDate());
 	}
 
 	@Override
-	public void handleMidtermPostponementDate(Date date) {
-
+	public void handleMidtermPostponementDate(MidtermEvent event) {
+		party(event.getDate());
 	}
 
-	@Override
-	public void handleMidtermPostponeDate(Date date) {
-
-	}
 }

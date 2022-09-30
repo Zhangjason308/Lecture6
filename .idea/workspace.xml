@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69dab2da-a0d1-483c-b5db-28f6476b6165" name="Changes" comment="Lecture 6 - Sept 23">
-      <change afterPath="$PROJECT_DIR$/src/MidtermEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CourseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CourseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MidtermEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MidtermEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Prof.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prof.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TeachingAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeachingAssistant.java" afterDir="false" />
@@ -75,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663962042835</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lecture 6 - Sept 23">
+      <created>1663963011564</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663963011564</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
