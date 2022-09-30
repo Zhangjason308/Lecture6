@@ -34,9 +34,10 @@ public class TeachingAssistant implements CourseListener {
 	}
 
 	@Override
-	public void handleMidtermPostponementDate(MidtermEvent event) {
+	public void handleMidtermPostponement(MidtermEvent event) {
 		this.postpone(event.getDate());
 	}
+
 
 
 

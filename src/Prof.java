@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class Prof {
 	private String name;
-	//private Date midtermDate; decoupled Prof on the midterm date
+	private Date midtermDate; //decoupled Prof on the midterm date
 	private ArrayList<CourseListener> courseListeners;//Changed Student to Course Listener in which we created an interface for Course Listener
 	//private TeachingAssistant ta;
 

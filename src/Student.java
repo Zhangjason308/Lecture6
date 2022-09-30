@@ -41,12 +41,12 @@ public class Student implements CourseListener {
 
 	@Override
 	public void handleMidtermDate(MidtermEvent event) {
-			System.out.println(event.getProf().getName());
-			study(event.getDate());
+		System.out.println(event.getProf().getName());
+		study(event.getDate());
 	}
 
 	@Override
-	public void handleMidtermPostponementDate(MidtermEvent event) {
+	public void handleMidtermPostponement(MidtermEvent event) {
 		party(event.getDate());
 	}
 
